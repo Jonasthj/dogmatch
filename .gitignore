@@ -1,0 +1,7 @@
+.idea
+*.iml
+/client/.parcel-cache/
+/client/dist/
+/client/node_modules/
+/node_modules/
+/server/node_modules/
