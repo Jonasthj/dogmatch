@@ -38,12 +38,12 @@ export function FrontpageHero() {
                                     About
                                 </Link>
                                 <span className="navbar-item">
-              <a className="button is-info is-inverted">
+              <Link className="button is-info is-inverted" to={"/sign-in"}>
                 <span className="icon">
-                  <i className="fab fa-github"></i>
+                  <i className="fas fa-solid fa-user"></i>
                 </span>
-                <span>Download</span>
-              </a>
+                <span>Sign In</span>
+              </Link>
             </span>
                             </div>
                         </div>

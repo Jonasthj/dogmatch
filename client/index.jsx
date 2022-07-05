@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./style/style.css";
 import {FrontpageHero} from "./components/frontpageHero";
 import {ContentWhatWeDo} from "./components/contentWhatWeDo";
 import {MediumSection} from "./components/mediumSection";
 import {ContentWhyUseUs} from "./components/contentWhyUseUs";
 import {Footer} from "./components/footer";
+import {InProgress} from "./components/inProgress";
 
 function Home() {
     return (
@@ -19,30 +20,18 @@ function Home() {
     );
 }
 
-function Explore()
-    {
-        return <h1>Explore</h1>;
-    }
-
-function Chat()
-    {
-        return <h1>Chat</h1>;
-    }
-
-function Profile()
-    {
-        return <h1>Profile</h1>;
-    }
-
 function Application()
     {
         return (
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<Home/>}/>
-                    <Route path={"/explore"} element={<Explore/>}/>
-                    <Route path={"/chat"} element={<Chat/>}/>
-                    <Route path={"/profile"} element={<Profile/>}/>
+                    <Route path={"/explore"} element={<InProgress/>}/>
+                    <Route path={"/chat"} element={<InProgress/>}/>
+                    <Route path={"/profile"} element={<InProgress/>}/>
+                    <Route path={"/about"} element={<InProgress/>}/>
+                    <Route path={"/sign-in"} element={<InProgress/>}/>
+                    <Route path={"/sign-up"} element={<InProgress/>}/>
                 </Routes>
             </BrowserRouter>
         );
