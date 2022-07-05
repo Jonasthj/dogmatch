@@ -2,15 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import "./style/style.css";
-import {Navbar} from "./components/navbar";
-import {Hero} from "./components/hero";
-import {HomeContent} from "./components/homeContent";
+import {FrontpageHero} from "./components/frontpageHero";
+import {ContentWhatWeDo} from "./components/contentWhatWeDo";
+import {MediumSection} from "./components/mediumSection";
+import {ContentWhyUseUs} from "./components/contentWhyUseUs";
+import {Footer} from "./components/footer";
 
 function Home() {
     return (
       <div>
-        {Hero()}
-        {HomeContent()}
+        {FrontpageHero()}
+          {MediumSection(ContentWhatWeDo(), "content-hero-1")}
+          {MediumSection(ContentWhyUseUs(), "content-hero-2")}
+          {Footer()}
       </div>
     );
 }
