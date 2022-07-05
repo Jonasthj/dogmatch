@@ -54,10 +54,10 @@ export function FrontpageHero() {
             <div className="hero-body">
                 <div className="columns has-text-centered is-vcentered">
                     <div className={"column"}>
-                        <p className="title is-size-1">
+                        <p className="title is-size-1 has-text-white">
                             Dogmatch
                         </p>
-                        <p className="subtitle is-size-5">
+                        <p className="subtitle is-size-5 has-text-white">
                             Find your buddy!
                         </p>
                     </div>
