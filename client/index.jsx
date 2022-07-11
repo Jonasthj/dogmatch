@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import "./style/style.css";
 import {FrontpageHero} from "./components/frontpageHero";
 import {ContentWhatWeDo} from "./components/contentWhatWeDo";
-import {MediumSection} from "./components/mediumSection";
+import {MediumSectionStyleable} from "./components/mediumSection";
 import {ContentWhyUseUs} from "./components/contentWhyUseUs";
 import {Footer} from "./components/footer";
 import {InProgress} from "./components/inProgress";
@@ -12,9 +12,9 @@ import {InProgress} from "./components/inProgress";
 function Home() {
     return (
       <div>
-        {FrontpageHero()}
-          {MediumSection(ContentWhatWeDo(), "content-hero-1")}
-          {MediumSection(ContentWhyUseUs(), "content-hero-2")}
+          {FrontpageHero()}
+          {MediumSectionStyleable(ContentWhatWeDo(), "content-hero-1")}
+          {MediumSectionStyleable(ContentWhyUseUs(), "content-hero-2")}
           {Footer()}
       </div>
     );

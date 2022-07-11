@@ -1,5 +1,3 @@
-import {MediumSection} from "./mediumSection";
-
 export function InProgress(){
     return (
         <div className={"columns mt-5"}>
@@ -13,7 +11,6 @@ export function InProgress(){
                     Home
                 </button>
             </div>
-
         </div>
     );
 }

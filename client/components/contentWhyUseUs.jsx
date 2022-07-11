@@ -1,4 +1,4 @@
-import {MediumSection} from "./mediumSection";
+import {MediumSectionStyleable} from "./mediumSection";
 
 export function ContentWhyUseUs(){
     return (
