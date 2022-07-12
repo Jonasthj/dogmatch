@@ -1,5 +1,5 @@
-import {Navbar} from "./navbar";
-import {Footer} from "./footer";
+import {Navbar} from "../general/navbar";
+import {Footer} from "../general/footer";
 import {ExploreSearch} from "./exploreSearch";
 import {ExploreResults} from "./exploreResults";
 

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import {Navbar} from "./navbar";
+import {Navbar} from "../general/navbar";
 
 export function FrontpageHero() {
 
@@ -13,13 +13,16 @@ export function FrontpageHero() {
         <div className={"hero-body"}>
           <div className={"columns has-text-centered is-vcentered"}>
             <div className={"column"}>
-              <p className={"title is-size-1 has-text-white"}>Dogmatch</p>
-              <p className={"subtitle is-size-5 has-text-white"}>
-                Find your buddy!
+              <p className={"title is-size-1 has-text-white has-text-weight-bold"}>Dogmatch</p>
+              <p className={"subtitle is-size-5 has-text-white has-text-weight-bold"}>
+                Finn din kamerat!
               </p>
             </div>
             <div className={"column"}>
-              <button className={"button is-large is-responsive is-success"}>
+              <button className={"button is-large is-responsive is-success"}
+              onClick={() => {
+                  window.location.href = window.location.origin + "/explore";
+              }}>
                 Explore
               </button>
             </div>

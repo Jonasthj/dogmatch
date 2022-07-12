@@ -6,3 +6,7 @@
     background-size: cover;
     background-color: #999;
 }
+
+.temp-border {
+    border:2px solid red;
+}

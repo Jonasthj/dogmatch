@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {useState} from "react";
-import {ContentSignInModalBody} from "./contentSignInModalBody";
+import {ContentSignInModalBody} from "../contentSignInModalBody";
 
 export function Navbar() {
   const signInModalTitle = "Sign in"
@@ -12,7 +12,7 @@ export function Navbar() {
         <nav className={"navbar"}>
           <div className={"container"}>
             <div className={"navbar-brand"}>
-              <a className={"navbar-item"}>
+              <a className={"navbar-item"} href={window.location.origin}>
                 <img
                     src="https://bulma.io/images/bulma-logo.png"
                     alt="Logo"
@@ -39,9 +39,9 @@ export function Navbar() {
                 <Link to={"/explore"} className={"navbar-item"}>
                   Utforsk
                 </Link>
-                <Link to={"/chat"} className={"navbar-item"}>
+                {/*<Link to={"/chat"} className={"navbar-item"}>
                   Chat
-                </Link>
+                </Link>*/}
                 <Link to={"/about"} className={"navbar-item"}>
                   Om oss
                 </Link>

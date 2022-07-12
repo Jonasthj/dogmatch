@@ -8,7 +8,7 @@ export function ExploreSearch() {
 
   return (
     <div>
-      <h1 className={"title"}>Søk</h1>
+      <h1 className={"title is-1"}>Søk</h1>
 
       <div>
         {ExploreSearchDropdown("Hunderase", "breed", breeds)}

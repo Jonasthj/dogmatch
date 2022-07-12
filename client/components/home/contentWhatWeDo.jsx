@@ -1,4 +1,4 @@
-import {ImageCard} from "./imageCard";
+import {ImageCard} from "../general/imageCard";
 
 export function ContentWhatWeDo(){
 
@@ -14,7 +14,7 @@ export function ContentWhatWeDo(){
     return (
         <div>
             <div className={"has-text-centered"}>
-                <h1 className={"title mb-5"}>What we do</h1>
+                <h1 className={"title mb-5 is-1"}>Hva vi gjør</h1>
             </div>
             <div className={"columns has-text-centered is-vcentered"}>
                 <div className={"column"}>
