@@ -5,6 +5,7 @@ import "./style/style.css";
 import {InProgress} from "./components/inProgress";
 import {About} from "./components/about";
 import {Home} from "./components/home";
+import {Explore} from "./components/explore";
 
 function Application()
     {
@@ -12,7 +13,7 @@ function Application()
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<Home/>}/>
-                    <Route path={"/explore"} element={<InProgress/>}/>
+                    <Route path={"/explore"} element={<Explore/>}/>
                     <Route path={"/chat"} element={<InProgress/>}/>
                     <Route path={"/profile"} element={<InProgress/>}/>
                     <Route path={"/about"} element={<About/>}/>
